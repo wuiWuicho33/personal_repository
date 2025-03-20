@@ -1,0 +1,200 @@
+/*::::::::::::::::::::::
+:::::::::LAYOUT:::::::::
+::::::::::::::::::::::*/
+
+/* ==============================================
+# SECTIONS
+============================================== */
+.hero{
+  margin-top:100px;
+}
+/* -----------------------------------------------
+  # Header
+----------------------------------------------- */
+header.hero{
+  background-image: url(http://via.placeholder.com/1200x800);
+  background-size: cover;
+  background-color:#1C4FC3;
+  padding:10rem 0;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;  
+}
+header.hero h1 {
+  font-size: 2.25rem;
+  color:#ffffff;
+}
+header.hero p {color:#ffffff;}
+
+/* -----------------------------------------------
+  # Section
+----------------------------------------------- */
+section, footer{padding:8rem 0 ;}
+section.legals{padding:20px 0;}
+section.legals p{margin-bottom:0;}
+section.topbar{padding:0;}
+section.topbar p{margin-bottom:0;}
+section.topbar .top-info{margin-top:5px;}
+section.topbar .top-info ul{margin:0; padding:0; font-size:12px;}
+
+/* ==============================================
+# ENLACES
+============================================== */
+
+/* -----------------------------------------------
+  # Button
+----------------------------------------------- */
+.btn {
+  font-weight: 700;
+  text-transform:none;
+  border: none;
+  border-radius:0px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding: 0.75rem 1rem;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #F05F40;
+  border-color: #F05F40;
+}
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+  color: #fff;
+  background-color: #ee4b28 !important;
+}
+.btn-primary:active, 
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+.btn-light {
+  color: #337ab7;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-light:hover, 
+.btn-light:focus, 
+.btn-light:active {
+  color: #337ab7;
+  background-color: lightgray !important;
+}
+.btn-light:active, 
+.btn-light:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+.btn-xl {padding: 1rem 2rem;}
+
+/* ==============================================
+# NAV
+============================================== */
+/*MAIN NAV*/
+.navbar-nav .nav-item .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:14px;
+  color:#121A48;
+  text-transform: uppercase;
+}
+.navbar-nav .nav-item .nav-link:hover, 
+.navbar-nav .nav-item .nav-link:focus {
+  color: #F05F40;
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: #F05F40 !important;
+}
+.navbar img{
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
+/*--------------------------------------------------------
+# Nav-pills
+--------------------------------------------------------*/
+.nav-pills .nav-link {border-radius: 0rem;}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color:#F05F40;
+  color:#ffffff;
+  font-weight:500;
+}
+
+/*--------------------------------------------------------
+# Back to top
+--------------------------------------------------------*/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #2cb34c url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #6e4686;
+  opacity: 1;
+}
+
+/* ==============================================
+# MEDIAQUERIES
+============================================== */
+/* -----------------------------------------------
+  # Desk / Tablets-H : Max width 1024px
+----------------------------------------------- */
+@media screen and (max-width:1024px){
+  header h1 {font-size: 3.5rem;}
+  .cd-top {
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+/* -----------------------------------------------
+  # Tablets-V / Mobile-H: Max width 768px
+----------------------------------------------- */
+@media screen and (max-width:768px){
+  header {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header p {font-size: 1.15rem;}
+  header h1 {font-size: 3rem;}
+
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+/* -----------------------------------------------
+  # Mobile-V: Max width 480px
+----------------------------------------------- */
+@media screen and (max-width:480px){
+
+}

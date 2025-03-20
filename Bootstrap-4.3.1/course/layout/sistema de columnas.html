@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<!--====================================================================================
+                                /// START DOC.HTML ///
+=====================================================================================-->
+<html lang="en">
+<!--====================================================================================
+                                /// START HEAD ///
+=====================================================================================-->
+<head>
+    <!--//////////
+    Metadata
+    ///////////-->
+    <!-- Character coding-->
+    <meta charset="utf-8">
+    <!-- SEO-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Compatibility view -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Facebook open graph debugger  -->
+    <meta property="og:type" content = "article/website etc." />
+    <meta property="og:title" content="title name">
+    <meta property="og:description" content="description">
+    <meta property="og:image" content="http://placehold.it/1200x630">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="url website">
+    <!-- Twitter cards validator -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@lorem" />
+    <meta name="twitter:creator" content="@SimoesSalome">
+    <meta name="twitter:title" content="title name" />
+    <meta name="twitter:description" content="description" />
+    <meta name="twitter:image" content="http://placehold.it/639x404" />
+    <!-- /// Document title /// -->
+    <title>Bootstrap | Sistema de columnas</title>
+    <!-- /// Favicon /// -->
+    <link rel="shorcut icon" href="../assets/img/favicon.ico"/>
+    <!--//////////
+    STYLESHEETS
+    ///////////-->
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <style type="text/css">
+      .bd-example-row .row>.col, .bd-example-row .row>[class^=col-] {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid rgba(86,61,124,.2);
+      }
+    </style>
+</head>
+<!--=======
+END HEAD
+========-->
+<!--====================================================================================
+                                /// START BODY ///
+=====================================================================================-->
+<body>
+
+    <!-- Teoria del sistema de columnas
+      ================================================== -->
+      <div class="bg-default py-5">
+        <div class="container bd-example-row">
+          <!-- Row -->
+          <h2 class="uppercase">Teoria del sistema de columnas</h2>
+          <h6 class="font-weight-bold">Ancho igual de columna .col</h6>
+          <p>La clase .col hace que los divs al interior de un row abarquen el 100% en conjunto, por lo que todos adquirirán un ancho igual.<br>
+          Utilice esta clase cuando las columnas sean iguales desde el dispositivo más pequeño hasta el más grande</p>
+          <div class="row mb-3">
+            <div class="col">
+              col
+            </div>
+            <div class="col">
+              col
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              col
+            </div>
+            <div class="col">
+              col
+            </div>
+            <div class="col">
+              col
+            </div>
+          </div>
+          <!-- Row -->
+          <h6 class="font-weight-bold">Ancho definido de columnas</h6>
+          <p>Puede establecer un ancho definido para una columna con un número de columna concreto.</p>
+          <!-- Columns are always 50% wide, on mobile and desktop -->
+          <div class="row mb-3">
+            <div class="col-6">.col-6</div>
+            <div class="col-6">.col-6</div>
+          </div>
+          <h6 class="font-weight-bold">Ancho definido de una columna + la clase .col</h6>
+          <p>Puede establecer el ancho definido para una columna con un número, y las de alrededor se adaptarán automáticamente a esa medida para abarcar el espacio de 12 columnas con la clase .col.</p>
+          <!-- row -->
+          <div class="row mb-3">
+            <div class="col">
+              col
+            </div>
+            <div class="col-6">
+              col-6
+            </div>
+            <div class="col">
+              col
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              col
+            </div>
+            <div class="col-5">
+              col-5
+            </div>
+            <div class="col">
+              col
+            </div>
+          </div>
+          <!-- Row -->
+          <h6 class="font-weight-bold">Ancho total en una medida en específico .col-xs,sm,md,lg,xl</h6>
+          <p>Si a un div además de la clase .col le especificamos un punto de interrupción col- {breakpoint} adquirirá un 100% de ancho en automático en esa medida en específico, en pocas palabras, dejarlo sin un número es igual a ponerle 12 columnas.</p>
+          <div class="row mb-3">
+            <div class="col-sm">
+              col-sm
+            </div>
+            <div class="col-sm">
+              col-sm
+            </div>
+            <div class="col-sm">
+              col-sm
+            </div>
+          </div>
+         <!-- Row -->
+          <h6 class="font-weight-bold">Ancho variable de contenido</h6>
+          <p>Utilice la clases col- {breakpoint} -auto para establecer el ancho de una columna en función de su contenido</p>
+          <div class="row mb-3">
+            <div class="col-2">
+              col-2
+            </div>
+            <div class="col-auto">
+              col-auto
+            </div>
+            <div class="col-2">
+              col-2
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              col
+            </div>
+            <div class="col-md-auto">
+              col-md-auto
+            </div>
+            <div class="col col-lg-2">
+              col col-lg-2
+            </div>
+          </div>
+          <!-- Row -->
+          <h6 class="font-weight-bold">Apilado a horizontal</h6>
+          <p>El sistema de columnas se vuelve horizontal después del punto de ruptura (sm), es decir después de la medida de small las columnas se acomodarán en 8 y 4 columnas.</p>
+          <div class="row mb-3">
+            <div class="col-sm-8">col-sm-8</div>
+            <div class="col-sm-4">col-sm-4</div>
+          </div>
+          <h6 class="font-weight-bold">Números pares</h6>
+          <div class="row mb-3">
+            <div class="col col-xs-6">.col col-xs-6</div>
+            <div class="col col-xs-6">.col col-xs-6</div>
+          </div>
+          <h6 class="font-weight-bold">Números nones</h6>
+          <div class="row mb-3">
+            <div class="col-md-5">.col-xs-5</div>
+            <div class="col-md-7">.col-xs-7</div>
+          </div>
+          <!-- Row -->
+          <h6 class="font-weight-bold">Anidamiento</h6>
+          <p>Para anidar su contenido con la cuadrícula predeterminada, agregue un nuevo .row y un conjunto de columnas .col-sm- * dentro de una columna .col-sm- * existente. Las filas anidadas deben incluir un conjunto de columnas que sumen 12 o menos (no es necesario que use las 12 columnas disponibles).</p>
+          <div class="row mb-3">
+            <div class="col-sm-9">
+              Level 1: .col-sm-9
+              <div class="row">
+                <div class="col-8 col-sm-6">
+                  Level 2: .col-8 .col-sm-6
+                </div>
+                <div class="col-4 col-sm-6">
+                  Level 2: .col-4 .col-sm-6
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Row -->
+          <h6 class="font-weight-bold">Columnas desbordadas</h6>
+          <p>Si se colocan más de 12 columnas en una sola fila, cada grupo de columnas adicionales, como una unidad, se ajustará a una nueva línea.</p>
+          <div class="row mb-3">
+            <div class="col-9">.col-9</div>
+            <div class="col-4">.col-4<br>Ya que 9 + 4 = 13 &gt; 12, esta 4 columnas de ancho div se envuelve en una nueva línea como una unidad contigua.</div>
+            <div class="col-6">.col-6<br>Las columnas posteriores continúan a lo largo de la nueva línea.</div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Resoluciones
+      ================================================== -->
+      <div class="bg-light py-5">
+        <div class="container bd-example-row">
+          <h2 class="uppercase">Resoluciones</h2>
+
+          <h6 class="font-weight-bold">Dispositivos extra pequeños (.col-xs)</h6>
+          <p>Teléfonos (<768px): menores de 768px.<br>
+          Ancho de contenedor: none.</p>
+          <div class="row mb-3">
+            <div class="col col-xs-12">col-xs-12</div>
+          </div>
+
+          <h6 class="font-weight-bold">Dispositivos pequeños (.col-sm)</h6>
+          <p>Tabletas (>768px): 768px y más.<br>
+          Ancho de contenedor: 750px.</p>
+          <div class="row mb-3">
+            <div class="col col-sm-6">col-sm-6</div>
+            <div class="col col-sm-6">col-sm-6</div>
+          </div> 
+
+          <h6 class="font-weight-bold">Dispositivos medianos (.col-md)</h6>
+          <p>Computadoras de escritorio (>992px): 992px y superiores.<br>
+          Ancho de contenedor: 970px.  
+          </p>
+          <div class="row mb-3">
+            <div class="col col-md-4">col-md-4</div>
+            <div class="col col-md-4">col-md-4</div>
+            <div class="col col-md-4">col-md-4</div>
+          </div>
+
+          <h6 class="font-weight-bold">Dispositivos grandes (.col-lg)</h6>
+          <p>Computadoras de escritorio grandes (>1200px): 1200px y superiores.<br>
+          Ancho de contenedor: 1170px;</p>
+          <div class="row mb-3">
+            <div class="col col-lg-3">col-lg-3</div>
+            <div class="col col-lg-3">col-lg-3</div>
+            <div class="col col-lg-3">col-lg-3</div>
+            <div class="col col-lg-3">col-lg-3</div>
+          </div>                               
+
+          <h6 class="font-weight-bold">Ejemplo: Celular (.col-xs-), tableta (.col-sm-) y escritorio (.col-md-)</h6>
+          <div class="row mb-3">
+            <div class="col-xs-12 col-sm-8 col-md-2">.col-xs-12 col-sm-8 col-md-2</div>
+            <div class="col-xs-12 col-sm-4 col-md-10">.col-xs-12 col-sm-4 col-md-10</div>
+          </div>
+
+        </div>
+      </div>
+    </body>
+<!--========
+END BODY
+=========-->
+</html>
+<!--=============
+FINISH DOC.HTML
+==============-->

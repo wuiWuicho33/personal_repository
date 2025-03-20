@@ -1,0 +1,11 @@
+PENDIENTES
+
+1.- Colocar fontawesome js a la plantilla
+
+
+Crear un menú lateral
+Homologar hoja css en landingpage
+Quitar html inecesario de las páginas
+Eliminar páginas innecesarias
+Menu lateral templates (Avilon, Bizpage, Newbiz, Rapid, Reveal)
+Hacer un apartado de componentes para agregar tipos de carruseles y tabs

@@ -1,0 +1,217 @@
+/*::::::::::::::::::::::
+:::::::::STYLES:::::::::
+::::::::::::::::::::::*/
+/* Imported files and fonts */
+@import url("font-awesome/fontawesome-all.css");
+
+/* Reset
+----------------------------------------------------------------------------- */
+html, body {height: 100%;}
+html{overflow-y:scroll; overflow-x:hidden;}
+html, body{margin:; padding:; font-size:; line-height:;}
+
+*, *::before, *::after{box-sizing:border-box;}
+
+a{outline:none; text-decoration:none;}
+a:hover, a:active{outline:none; text-decoration:none;}
+
+/* HTML 5 Overrides
+----------------------------------------------------------------------------- */
+address, article, aside, figcaption, figure, footer, header, main, nav, section{
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+/* Transition
+----------------------------------------------------------------------------- */
+/* *, *::before, *::after{transition:all .3s ease-in-out;} */
+#mainav form *{transition:none !important;}
+
+/* Fonts
+----------------------------------------------------------------------------- */
+body, input, textarea, select{font-family:;}
+h1, h2, h3, h4, h5, h6, .heading{font-family:;}
+
+/* Generalise
+----------------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6, .heading{font-weight:normal; text-transform:;}
+address{font-style:normal; font-weight:normal;}
+hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
+hr.light {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #fff;
+}
+.font-xs{font-size:.8rem;}
+.font-x1{font-size:1.2rem;}
+.font-x2{font-size:1.8rem;}
+.font-x3{font-size:2.8rem;}
+
+.bold{font-weight:bold;}
+.uppercase{text-transform:uppercase;}
+.capitalise{text-transform:capitalize;}
+.hidden{display:none;}
+
+/* Spacing, Marging and padding
+----------------------------------------------------------------------------- */
+.nospace {margin:0; padding:0; list-style:none;}
+
+/* Pushright */
+.pushright li{margin-right:20px;}
+.pushright li:last-child{margin-right:0;}
+
+/* Display properties
+----------------------------------------------------------------------------- */
+/*Inline elements*/
+.block{display:block;}
+
+/*Elementos de línea */
+.inline *{display:inline-block;}
+.inline *:last-child{margin-right:0;}
+.hidden{display:none;}
+
+/* Image styles
+----------------------------------------------------------------------------- */
+img, object, embed, video {max-width: 100%;}
+
+img{
+    width:auto;
+    height:auto;
+    margin:0;
+    padding:0;
+    border:none;
+    line-height:normal;
+    vertical-align:middle;
+}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+/* IE 6 no admite max-width (anchura máxima),por lo que usa de manera
+predeterminada una anchura del 100% */
+.ie6 img {width:100%;}
+
+.img-hover:hover {opacity: 0.8;}
+
+/* Container filter with background image
+----------------------------------------------------------------------------- */
+.overlay{position:relative; z-index:1;}
+.overlay::after{
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    content:"";
+    z-index:-1;
+}
+
+/* Background styles
+----------------------------------------------------------------------------- */
+.bkgnd{
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.attach{background-attachment: fixed;}
+
+/* Button styles
+----------------------------------------------------------------------------- */
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+}
+
+.btn-xl {padding: 1rem 2rem;}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+/* Colours
+----------------------------------------------------------------------------- */
+body{color:; background-color:;}
+
+a{color:#337ab7;}
+a:active, a:focus{color:#286090;}/* IE10 + 11 Bugfix - prevents grey background */
+
+hr {border-color: #337ab7;}
+hr.light {border-color: #fff;}
+
+.text-primary {color:#337ab7;}
+.text-secondary {color:;}
+.text-tertiary {color:;}
+.text-inverted {color: #fff;}
+
+.bg-default {background-color:#ffffff; color:#333;}
+.bg-light {background-color:#EEEEEE; color:#000;}
+.bg-primary {background-color: #337ab7; color:#fff;}
+.bg-secondary {background-color:#dff0d8; color:;}
+.bg-tertiary {background-color:#d9edf7; color:;}
+.bg-inverted {background-color:#000; color:#fff;}
+.bg-degraded{
+    background: #19265C; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#19265C, #009BDB); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#19265C, #009BDB); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#19265C,#009BDB); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#19265C,#009BDB); /* Standard syntax */
+}
+
+/* Image filter */
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay.light::after{background-color:rgba(255,255,255,.55);}
+
+/* Button styles */
+.btn-primary {
+  color: #fff;
+  background-color: #F05F40;
+  border-color: #F05F40;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  color: #fff;
+  background-color: #ee4b28 !important;
+}
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+.btn-light {
+  color: #337ab7;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  color: #337ab7;
+  background-color: lightgray !important;
+}
+.btn-light:active, .btn-light:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+/* ==========================================================================
+Desk devices: Max width 900px
+========================================================================== */
+@media screen and (max-width:900px){ }
+
+/* ==========================================================================
+Tablet devices: Max width 750px
+========================================================================== */
+@media screen and (max-width:750px){
+  .inline li{display:block; margin-bottom:10px;}
+	.pushright li{margin-right:0;}
+  .font-x2{font-size:;}
+	.font-x3{font-size:;}
+
+  .fl_left, .fl_right{display:block; float:none;}
+	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+}

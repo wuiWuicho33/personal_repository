@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--====================================================================================
+                                /// START DOC.HTML ///
+=====================================================================================-->
+<html lang="en">
+<!--====================================================================================
+                                /// START HEAD ///
+=====================================================================================-->
+<head>
+    <!--//////////
+    Metadata
+    ///////////-->
+    <!-- Character coding-->
+    <meta charset="utf-8">
+    <!-- SEO-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Compatibility view -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Facebook open graph debugger  -->
+    <meta property="og:type" content = "article/website etc." />
+    <meta property="og:title" content="title name">
+    <meta property="og:description" content="description">
+    <meta property="og:image" content="http://placehold.it/1200x630">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="url website">
+    <!-- Twitter cards validator -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@lorem" />
+    <meta name="twitter:creator" content="@SimoesSalome">
+    <meta name="twitter:title" content="title name" />
+    <meta name="twitter:description" content="description" />
+    <meta name="twitter:image" content="http://placehold.it/639x404" />
+    <!-- /// Document title /// -->
+    <title>Bootstrap | Clases para el sistema de columnas</title>
+    <!-- /// Favicon /// -->
+    <link rel="shorcut icon" href="../assets/img/favicon.ico"/>
+    <!--//////////
+    STYLESHEETS
+    ///////////-->
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <style type="text/css">
+      .bd-example-row .row>.col, .bd-example-row .row>[class^=col-] {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid rgba(86,61,124,.2);
+      }
+    </style>
+</head>
+<!--=======
+END HEAD
+========-->
+<!--====================================================================================
+                                /// START BODY ///
+=====================================================================================-->
+<body>
+
+    <!-- Offsetting columns
+      ================================================== -->
+      <div class="bg-default py-5">
+        <div class="container bd-example-row">
+          <!-- row -->
+          <h3 class="uppercase">Alineación de columnas</h3>
+          <p>Puede compensar las columnas de la cuadrícula de dos maneras: nuestras clases receptivas de .offset- grid y nuestras utilidades de margen.<br>
+          Las clases de cuadrícula se dimensionan para coincidir con las columnas, mientras que los márgenes son más útiles para diseños rápidos donde el ancho del desplazamiento es variable.</p>
+          <h3>Offset classes</h3>
+          <p>Mueva las columnas a la derecha usando las clases .offset-md- *. Estas clases aumentan el margen izquierdo de una columna en * columnas. <br> Por ejemplo, .offset-md-4 mueve .col-md-4 sobre cuatro columnas.</p>
+          <div class="row mb-3">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+            <div class="col-md-3 offset-md-3">.col-md-3 .offset-md-3</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6 offset-md-3">.col-md-6 .offset-md-3</div>
+          </div>
+          <!-- row -->
+          <p>Además de borrar la columna en puntos de interrupción receptivos, es posible que deba restablecer las compensaciones.</p>
+          <div class="row">
+            <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+            <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+            <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Utilidades de margen
+      ================================================== -->
+      <div class="bg-default py-5 ">
+        <div class="container bd-example-row">
+          <h3>Utilidades de margen</h3>
+          <p>Puede usar utilidades de margen como .mr-auto para forzar a las columnas hermanas a separarse unas de otras.</p>
+          <div class="row mb-3">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+            <div class="col-md-3 ml-md-auto">.col-md-3 .ml-md-auto</div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-auto mr-auto">.col-auto .mr-auto</div>
+            <div class="col-auto">.col-auto</div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Gutters
+      ================================================== -->
+      <div class="bg-light py-5">
+        <div class="container bd-example-row">
+          <!-- Row -->
+          <h3>Gutters</h3>
+          <p>Las canaletas se pueden ajustar de manera receptiva mediante relleno de punto de ruptura específico y clases de utilidad de margen negativo. Para cambiar las canaletas en una fila dada, empareje una utilidad de margen negativo en el .row y utilidades de relleno coincidentes en los .cols. El .container o .container-fluid parent también puede necesitar ajustarse para evitar un desbordamiento no deseado, utilizando nuevamente la utilidad de relleno correspondiente.</p>
+          <p>Aquí hay un ejemplo de personalización de la cuadrícula Bootstrap en el punto de corte grande (lg) y superior. Aumentamos el relleno .col con .px-lg-5, lo contrarrestamos con .mx-lg-n5 en el .row principal y luego ajustamos el contenedor .container con .px-lg-5.</p>
+          <div class="row mb-3 mx-lg-n5">
+            <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
+            <div class="col py-3 px-lg-5 border bg-light">Custom column padding</div>
+          </div>          
+          <h3>No gutters</h3>
+          <div class="row mb-3 no-gutters">
+            <div class="col-12 col-sm-6 col-md-8">.col-12 .col-sm-6 .col-md-8</div>
+            <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Saltos de columna
+      ================================================== -->
+      <div class="bg-default py-5">
+        <div class="container bd-example-row">
+          <!-- Row -->
+          <h3>Saltos de columna</h3>
+          <p>Para dar saltos de columna a una nueva línea dentro de un row tenemos que agregar un elemento con ancho del 100%.</p>
+          <div class="row mb-3">
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="w-100"></div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+          </div>
+          <!-- Row -->
+          <p>También puede aplicar este salto con medidas de interrupción</p>
+          <div class="row">
+            <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+            <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+            <!-- Force next columns to break to new line at md breakpoint and up -->
+            <div class="w-100 d-none d-md-block"></div>
+            <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+            <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+          </div>
+
+        </div>
+      </div>
+
+    </body>
+<!--========
+END BODY
+=========-->
+</html>
+<!--=============
+FINISH DOC.HTML
+==============-->

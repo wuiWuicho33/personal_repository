@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--====================================================================================
+                                /// START DOC.HTML ///
+=====================================================================================-->
+<html lang="en">
+<!--====================================================================================
+                                /// START HEAD ///
+=====================================================================================-->
+<head>
+    <!--//////////
+    Metadata
+    ///////////-->
+    <!-- Character coding-->
+    <meta charset="utf-8">
+    <!-- SEO-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Compatibility view -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Facebook open graph debugger  -->
+    <meta property="og:type" content = "article/website etc." />
+    <meta property="og:title" content="title name">
+    <meta property="og:description" content="description">
+    <meta property="og:image" content="http://placehold.it/1200x630">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="url website">
+    <!-- Twitter cards validator -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@lorem" />
+    <meta name="twitter:creator" content="@SimoesSalome">
+    <meta name="twitter:title" content="title name" />
+    <meta name="twitter:description" content="description" />
+    <meta name="twitter:image" content="http://placehold.it/639x404" />
+    <!-- /// Document title /// -->
+    <title>Bootstrap | Dropdown on Hover Javascrip</title>
+    <!-- /// Favicon /// -->
+    <link rel="shorcut icon" href="assets/img/favicon.ico"/>
+    <!--//////////
+    STYLESHEETS
+    ///////////-->
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<!--=======
+END HEAD
+========-->
+<!--====================================================================================
+                                /// START BODY ///
+=====================================================================================-->
+<body>
+
+    <!-- Navigation
+      ================================================== -->
+      <header class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/">Plugin Demo</a>
+          <div class="navbar-collapse nav-collapse navbar-header collapse" style="height: 1px;">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle js-activated" aria-expanded="false">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li class="dropdown-header">Dropdown header</li>
+                  <li><a href="#">Separated link</a></li>
+                  <li><a href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" aria-expanded="false">I Have a Submenu <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Menu Item</a></li>
+                  <li><a tabindex="-1" href="#">Bootstrap 3 Does Not Support Submenus</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" aria-expanded="false">Account <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">My Account</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="#">Change Email</a></li>
+                  <li><a tabindex="-1" href="#">Change Password</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="#">Logout</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" aria-expanded="false">Contact <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a tabindex="-1" href="#">Contact</a></li>
+                  <li><a tabindex="-1" href="#">Contact My Mom</a></li>
+                  <li class="divider"></li>
+                  <li><a tabindex="-1" href="#">Contact Your Mom</a></li>
+                  <li><a tabindex="-1" href="#">Contact the President</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+    <!-- Page content
+      ================================================== -->
+      <div class="container">
+        <div class="col-12">
+          <div class="alert alert-danger">
+            <strong>Please note</strong> that Bootstrap 3 <em>does not</em> support submenus. See <a href="https://github.com/twbs/bootstrap/pull/6342#issuecomment-11594010">this comment</a> from one of the original authors.
+          </div>
+          <h1>Bootstrap: Dropdown on Hover Plugin Demo</h1>
+          <p>Hover over the nav items to see that they activate on hover. I'm setting the instantlyCloseOthers flag to true, so when you hover over a new nav item, the other ones instantly close (instead of waiting for their timeouts). See <a href="https://cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/">cameronspear.com/blog/bootstrap-dropdown-on-hover-plugin/</a> for more.</p>
+          <h2><em>New!</em> Try it with data-attributes</h2>
+          <div class="btn-toolbar">
+            <div class="btn-group">
+              <button class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000">1000ms Delay <b class="caret"></b></button>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Why Would</a></li>
+                <li><a tabindex="-1" href="#">A Home Tab</a></li>
+                <li><a tabindex="-1" href="#">Have Dropdowns?</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="false">Doesn't Close Others <b class="caret"></b></button>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">My Account</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">Change Email</a></li>
+                <li><a tabindex="-1" href="#">Change Password</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">Logout</a></li>
+              </ul>
+            </div>
+            <div class="btn-group">
+              <button class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Defaults <b class="caret"></b></button>
+              <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="#">Contact</a></li>
+                <li><a tabindex="-1" href="#">Contact My Mom</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="#">Contact Your Mom</a></li>
+                <li><a tabindex="-1" href="#">Contact the President</a></li>
+              </ul>
+            </div>
+          </div>
+          <h3>It also works with buttons and tabs</h3>
+          <p>Just add <code>data-hover="dropdown"</code> where you'd put <code>data-toggle="dropdown"</code></p>
+
+          <div class="btn-toolbar">
+            <div class="btn-group">
+              <button class="btn dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">Button <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div> <!-- .btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false">Primary <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div> <!-- .btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false">Danger <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div> <!-- .btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false">Warning <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div> <!-- .btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false">Success <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div> <!-- .btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-info dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false">Info <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div> <!-- .btn-group -->
+            <div class="btn-group">
+              <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false">Default <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div> <!-- .btn-group -->
+          </div> <!-- .btn-toolbar -->
+          <h3>Works with button groups</h3>
+          <p>This was trickier than you might think!</p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">1</button>
+            <button type="button" class="btn btn-default">2</button>
+            <button type="button" class="btn btn-default">3</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">
+                Dropdown
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="https://cameronspear.com/demos/bootstrap-hover-dropdown/#">Dropdown link</a></li>
+                <li><a href="https://cameronspear.com/demos/bootstrap-hover-dropdown/#">Dropdown link</a></li>
+                <li><a href="https://cameronspear.com/demos/bootstrap-hover-dropdown/#">Dropdown link</a></li>
+              </ul>
+            </div>
+          </div>
+          <div style="height: 30px" class="being-lazy"></div>
+          <div class="tabs-example">
+            <ul id="myTab" class="nav nav-tabs">
+              <li class="active"><a href="#" data-toggle="tab">Home</a></li>
+              <li><a href="#" data-toggle="tab">Profile</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" aria-expanded="false">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#" data-toggle="tab">@fat</a></li>
+                  <li><a href="#" data-toggle="tab">@mdo</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade in active" id="home">
+                <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.</p>
+              </div>
+              <div class="tab-pane fade" id="profile">
+                <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown1">
+                <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="dropdown2">
+                <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park vegan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--//////////
+    JAVASCRIPTS
+    ///////////-->
+    <!-- Librery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="assets/js/bootstrap-hover-dropdown.js"></script>
+    <script>
+        // usage is straightforward:
+        $(document).ready(function() {
+          $('.js-activated').dropdownHover().dropdown();
+        });
+      </script>
+
+</body>
+<!--========
+END BODY
+=========-->
+</html>
+<!--=============
+FINISH DOC.HTML
+==============-->

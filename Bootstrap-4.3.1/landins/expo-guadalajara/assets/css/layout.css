@@ -1,0 +1,188 @@
+/*MAIN NAV*/
+.navbar-nav .nav-item .nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  font-size:14px;
+  color:#00263A;
+  text-transform:uppercase;
+}
+
+.navbar-nav .nav-item .nav-link:hover, 
+.navbar-nav .nav-item .nav-link:focus {
+  color: #009ABF;
+}
+.navbar-nav .nav-item .nav-link.active {
+  color: #009ABF !important;
+}
+
+/*--------------------------------------------------------
+# HEADER
+--------------------------------------------------------*/
+.intro{
+  padding:10rem 0;
+  background: #f5f8fd url("../img/intro/intro-bg.png") center top no-repeat;
+  background-size: cover;
+  background-color:#00263A;
+}
+
+.intro h1,.intro h5 {color:#ffffff;}
+.intro h1 span {color:#009ABF;}
+.intro p {color:#ffffff;}
+
+/*--------------------------------------------------------
+# SPACING
+--------------------------------------------------------*/
+section {padding: 8rem 0;}
+.row {margin-bottom:4rem;}
+.row:last-child {margin-bottom:0;}
+section.copyright {
+  padding: 2rem 0 1rem;
+}
+
+/*--------------------------------------------------------
+# BUTTON STYLES
+--------------------------------------------------------*/
+
+.btn {
+  border: none;
+  border-radius:0;
+  padding: 1rem 1.5rem;
+  margin-bottom:2rem;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #009ABF;
+  border-color: #009ABF;
+  border:1px solid #009ABF;
+}
+.btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+  color: #fff;
+  background-color: #00263A !important;
+  border:1px solid #fff;
+}
+
+.btn-dark:active, .btn-dark:focus {
+  box-shadow:none !important;
+}
+
+.btn-light {
+  color: #337ab7;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-light:hover, .btn-light:focus, .btn-light:active {
+  color: #337ab7;
+  background-color: lightgray !important;
+}
+.btn-light:active, .btn-light:focus {
+  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+
+/*--------------------------------------------------------
+# SOCIAL
+--------------------------------------------------------*/
+.social {margin-top: 15px;}
+.social a {color: #ffffff;}
+.social a:hover {color: #1dc8cd;}
+.social i {
+  font-size: 18px;
+  margin: 0 2px 2rem;
+}
+
+/*--------------------------------------------------------
+# Back to top
+--------------------------------------------------------*/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #009ABF url(../img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.cd-top.cd-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+.no-touch .cd-top:hover {
+  background-color: #6e4686;
+  opacity: 1;
+}
+
+
+/*--------------------------------------------------------
+# Nav-pills
+--------------------------------------------------------*/
+
+.nav-pills .nav-link {
+  border-radius: 0rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color:#009ABF;
+  background-color:inherit !important;
+  font-weight:500;
+  border-bottom:4px solid #009ABF;
+}
+
+/* =======================================================
+# MEDIAQUERIES / MOBILE FIRST
+/* ==================================================== */
+@media only screen and (min-width: 1200px) {
+  header h1 {font-size: 3.5rem;}
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 40px;
+    width: 40px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 72px;
+    padding-bottom: 0;
+  }
+  header p {font-size: 1.15rem;}
+  header h1 {font-size: 3rem;}
+
+  .intro .intro-info {padding-top: 80px;}
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+
+.btn {margin-bottom:0rem;}
+}
+

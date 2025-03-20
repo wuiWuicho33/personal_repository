@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!--====================================================================================
+                                /// START DOC.HTML ///
+=====================================================================================-->
+<html lang="en">
+<!--====================================================================================
+                                /// START HEAD ///
+=====================================================================================-->
+<head>
+    <!--//////////
+    Metadata
+    ///////////-->
+    <!-- Character coding-->
+    <meta charset="utf-8">
+    <!-- SEO-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Compatibility view -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Facebook open graph debugger  -->
+    <meta property="og:type" content = "article/website etc." />
+    <meta property="og:title" content="title name">
+    <meta property="og:description" content="description">
+    <meta property="og:image" content="http://placehold.it/1200x630">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="url website">
+    <!-- Twitter cards validator -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@lorem" />
+    <meta name="twitter:creator" content="@SimoesSalome">
+    <meta name="twitter:title" content="title name" />
+    <meta name="twitter:description" content="description" />
+    <meta name="twitter:image" content="http://placehold.it/639x404" />
+    <!-- /// Document title /// -->
+    <title>Bootstrap | flex-direction:#;</title>
+    <!-- /// Favicon /// -->
+    <link rel="shorcut icon" href="../assets/img/favicon.ico"/>
+    <!--//////////
+    STYLESHEETS
+    ///////////-->
+    <!-- Bootstrap Core CSS -->
+    <link href="../../assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <link href="../../assets/css/styles.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      .bd-highlight {
+        background-color: rgba(86,61,124,.15);
+        border: 1px solid rgba(86,61,124,.15);
+      }
+    </style>
+</head>
+<!--=======
+END HEAD
+========-->
+<!--====================================================================================
+                                /// START BODY ///
+=====================================================================================-->
+<body>
+
+    <!-- Page Content
+      ================================================== -->
+      <div class="bg-default py-5">
+        <div class="container">
+          <!-- Page Heading/Breadcrumbs -->
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 class="page-header">Flexbox grid</h1>
+            </div>
+          </div>
+          <div class="row py-5">
+            <div class="col-md-3">
+             <div class="list-group">
+              <a href="index.html" class="list-group-item list-group-item-action">Inicio</a>
+              <a class="list-group-item list-group-item-primary">
+                <h5 class="">Propiedades del <br> contenedor padre</h5>
+              </a>
+              <a href="display-flex.html" class="list-group-item list-group-item-action">1.-Display:flex;</a>
+              <a href="flex-direction.html" class="list-group-item list-group-item-action active">2.-flex-direction:#;</a>
+              <a href="flex-wrap.html" class="list-group-item list-group-item-action">3.-flex-wrap:#;</a>
+              <a href="flex-flow.html" class="list-group-item list-group-item-action">4.-flex-flow:#;</a>
+              <a href="justify-content.html" class="list-group-item list-group-item-action">5.-justify-content:#;</a>
+              <a href="align-items.html" class="list-group-item list-group-item-action">6.-align-items:#;</a>
+              <a href="align-content.html" class="list-group-item list-group-item-action">7.-align-content:#;</a>
+              <a class="list-group-item list-group-item-primary">
+                <h5 class="">Propiedades de los <br> elementos hijos</h5>
+              </a>
+              <a href="flex-basis.html" class="list-group-item list-group-item-action">1.-flex-basis:#;</a>
+              <a href="flex-grow.html" class="list-group-item list-group-item-action">2.-flex-grow:#;</a>
+              <a href="flex-shrink.html" class="list-group-item list-group-item-action">3.-flex-shrink:#;</a>
+              <a href="order.html" class="list-group-item list-group-item-action">5.-order:#;</a>
+              <a href="align-self.html" class="list-group-item list-group-item-action">6.-align-self:#;</a>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <h3 class="uppercase">Propiedades del contenedor padre</h3>
+            <!-- row -->
+            <h3>2.-flex-direction:value;</h3>
+            <p>Esta propiedad establece la dirección de los elementos al interior de un contenedor, y tiene cuatro valores:<br>row | column | row-reverse | column-reverse</p>
+            <ul>
+              <li><b>flex-direction:</b> row;</li>
+              <li><b>flex-direction:</b> column;</li>
+              <li><b>flex-direction:</b> row-reverse;</li>
+              <li><b>flex-direction:</b> column-reverse;</li>
+            </ul>
+
+            <!-- flex-direction:row; -->
+            <h6 class="font-weight-bold">flex-direction:row;</h6>
+            <p>Este valor viene por defecto.</p>
+            <div class="d-flex flex-row bd-highlight mb-3">
+              <div class="p-2 bd-highlight">Flex item 1</div>
+              <div class="p-2 bd-highlight">Flex item 2</div>
+              <div class="p-2 bd-highlight">Flex item 3</div>
+            </div>
+            <!-- flex-direction: row-reverse; -->
+            <h6 class="font-weight-bold">flex-direction: row-reverse;</h6>
+            <p>Los elementos comienzan al revés.</p>
+            <div class="d-flex flex-row-reverse bd-highlight mb-3">
+              <div class="p-2 bd-highlight">Flex item 1</div>
+              <div class="p-2 bd-highlight">Flex item 2</div>
+              <div class="p-2 bd-highlight">Flex item 3</div>
+            </div>
+            <!-- flex-direction: column; -->
+            <h6 class="font-weight-bold">flex-direction: column;</h6>
+            <p>Los elementos los pone en columnas.</p>
+            <div class="d-flex flex-column bd-highlight mb-3">
+              <div class="p-2 bd-highlight">Flex item 1</div>
+              <div class="p-2 bd-highlight">Flex item 2</div>
+              <div class="p-2 bd-highlight">Flex item 3</div>
+            </div>
+            <!-- flex-direction: column-reverse; -->
+            <h6 class="font-weight-bold">flex-direction: column-reverse;</h6>
+            <p>Los elementos los pone en columnas pero con orden inverso.</p>
+            <div class="d-flex flex-column-reverse bd-highlight mb-3">
+              <div class="p-2 bd-highlight">Flex item 1</div>
+              <div class="p-2 bd-highlight">Flex item 2</div>
+              <div class="p-2 bd-highlight">Flex item 3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+<!--========
+END BODY
+=========-->
+</html>
+<!--=============
+FINISH DOC.HTML
+==============-->

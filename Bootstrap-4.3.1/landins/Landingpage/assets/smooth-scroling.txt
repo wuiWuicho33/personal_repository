@@ -1,0 +1,6 @@
+Para que agarre tienes que agregarle la clase .js-scroll-trigger a las anclas
+asi como los siguientes js
+  <!-- Landingpage JS -->
+  <script src="assets/js/jquery/jquery.easing.js"></script>
+  <script src="assets/js/jquery/smooth-scroling.js"></script>
+No incluye estilos .css

@@ -1,0 +1,231 @@
+/*::::::::::::::::::::::
+:::::::::STYLES:::::::::
+::::::::::::::::::::::*/
+/* Imported files and fonts */
+/**@import url("font-awesome/fontawesome-all.css");**/
+@import url("font-awesome/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+/* -----------------------------------------------
+  # Reset
+----------------------------------------------- */
+html, body {height: 100%;}
+html{overflow-y:scroll; overflow-x:hidden;}
+html, body{margin:; padding:; font-size:; line-height:;}
+*, *::before, *::after{box-sizing:border-box;}
+a{outline:none; text-decoration:none;}
+a:hover, a:active{outline:none; text-decoration:none;}
+
+/* -----------------------------------------------
+  # HTML 5 Overrides
+----------------------------------------------- */
+address, article, aside, figcaption, figure, 
+footer, header, main, nav, section{
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+/* -----------------------------------------------
+  # Transition
+----------------------------------------------- */
+/**, *::before, *::after{transition:all .3s ease-in-out;}*/
+#mainav form *{transition:none !important;}
+
+/* -----------------------------------------------
+  # Fonts
+----------------------------------------------- */
+/*html {font-size: 1.6rem;}*/
+body, input, textarea, select{font-family: 'Montserrat', sans-serif;}
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight:700;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+h1,h2,h3,
+.h1,.h2,.h3 {
+  margin: 0 0 30px 0;
+}
+
+h4,h5,h6,
+.h4,.h5,.h6 {
+  margin: 0 0 10px 0;
+}
+
+h1 .h1 {font-size: 2.5rem;}/*36px*/
+h2 .h2 {font-size: 2rem;}/*30px*/
+h3 .h3 {font-size: 1.75rem;}/*24px*/
+h4 .h4 {font-size: 1.5rem;}/*18px*/
+h5 .h5 {font-size: 1.25rem;}/*12px*/
+h6 .h6 {font-size: 1rem;}/*10px*/
+h2 .light., .h2 .light {font-weight:400;}
+h3 .light, .h3 .light {font-weight:400;}
+
+p {
+  line-height: 1.55;
+  color: #333;
+  font-size:14px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.font-xs{font-size:.8rem;}
+.font-x1{font-size:1.2rem;}
+.font-x2{font-size:1.8rem;}
+.font-x3{font-size:2.8rem;}
+
+/*
+.bold{font-weight:bold;}
+.uppercase{text-transform:uppercase;}
+.capitalise{text-transform:capitalize;}
+*/
+
+.error-404 {font-size: 100px;}
+
+/* -----------------------------------------------
+  # Colours
+----------------------------------------------- */
+body {
+  background: #fff;
+  color: #666666;
+}
+
+a{color:#F05F40;}
+a:active, a:focus, a:hover {color:#ee4b28 !important;}
+a.inverse{color:#121A48;}
+a.inverse:active, a:focus, a:hover{color:#fff !important;}
+/* IE10 + 11 Bugfix - prevents grey background */
+
+.text-primary {color:#337ab7;}
+.text-secondary {color:#E47911;}
+.text-tertiary {color:#E47911;}
+.text-inverted {color: #ffffff;}
+
+.bg-white {background-color:#fff !important; color:#121A48;}
+.bg-white p{color:#000;}
+.bg-light {background-color:#DEE9F5 !important; color:#121A48;}
+.bg-light p{color:#000;}
+.bg-dark {background-color:#F05F40 !important; color:#fff;}
+.bg-dark p {color:#fff;}
+.bg-darker {background-color:#121A48; color:#fff;}
+.bg-darker p{color:#fff;}
+
+.bg-degrades {
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#105099+0,2989d8+60,7db9e8+100 */
+background: #105099; /* Old browsers */
+background: -moz-linear-gradient(left,  #105099 0%, #2989d8 60%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #105099 0%,#2989d8 60%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #105099 0%,#2989d8 60%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#105099', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+color:#fff;
+}
+.bg-degrades p{color:#fff;}
+
+/* Image filter */
+.overlay{color:#FFFFFF; background-color:inherit;}
+.overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
+.overlay.light::after{background-color:rgba(255,255,255,.55);}
+
+/* -----------------------------------------------
+  # Spacing, Marging and padding
+----------------------------------------------- */
+.nospace {margin:0; padding:0; list-style:none;}
+.hidden{display:none;}
+/*
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+*/
+.pushright li{margin-right:20px;}
+.pushright li:last-child{margin-right:0;}
+
+img{padding-bottom:2rem;}
+
+/* -----------------------------------------------
+  # Image styles
+----------------------------------------------- */
+img, object, embed, video {max-width: 100%;}
+img{
+    width:auto;
+    height:auto;
+    margin:0;
+    vertical-align:middle;
+}
+.ie6 img {width:100%;}
+.img-hover:hover {opacity: 0.8;}
+
+/* -----------------------------------------------
+  # Display properties
+----------------------------------------------- */
+.block{display:block;}
+.inline *{display:inline-block;}
+.inline *:last-child{margin-right:0;}
+.hidden{display:none;}
+
+/* -----------------------------------------------
+  # Background styles
+----------------------------------------------- */
+.bkgnd{
+    background-position:top center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.attach{background-attachment: fixed;}
+
+/* -----------------------------------------------
+  # Scrollbar
+----------------------------------------------- */
+body::-webkit-scrollbar{width: 15px;}
+body::-webkit-scrollbar-thumb{background:#F05F40;}
+
+/* ==============================================
+# MEDIAQUERIES
+============================================== */
+/* -----------------------------------------------
+  # Desk / Tablets-H : Max width 1024px
+----------------------------------------------- */
+@media screen and (max-width:1024px){
+  /*html {font-size: 1.4rem;}*/
+  h1 .h1 {color:blue;}
+ }
+
+/* -----------------------------------------------
+  # Tablets-V / Mobile-H: Max width 768px
+----------------------------------------------- */
+@media screen and (max-width:768px){
+  /*html {font-size: 1.2rem;}*/
+  h1 .h1 {color:green;}
+  .inline li{
+    display:block; 
+    margin-bottom:10px;
+  }
+  .pushright li{margin-right:0;}
+  /*.fl_left, .fl_right{display:block; float:none;}*/
+  .imgl, .imgr{
+    display:inline-block; 
+    float:none; 
+    margin:0 0 10px 0;
+  }
+}
+/* -----------------------------------------------
+  # Mobile-V: Max width 480px
+----------------------------------------------- */
+@media (max-width: 480px) {
+  /*html {font-size: 1rem;}*/
+  h1 .h1 {color:orange;}
+}
+
+/* Tablets en horizonal y escritorios normales
+@media (min-width: 768px) and (max-width: 1199px) { ... }*/
+
+/*
+@-ms-viewport{width:device-width;}
+@media (min-width: 768px) {
+  .showcase .showcase-text {padding: 7rem;}
+}
+*/
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--====================================================================================
+                                /// START DOC.HTML ///
+=====================================================================================-->
+<html lang="en">
+<!--====================================================================================
+                                /// START HEAD ///
+=====================================================================================-->
+<head>
+    <!--//////////
+    Metadata
+    ///////////-->
+    <!-- Character coding-->
+    <meta charset="utf-8">
+    <!-- SEO-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Compatibility view -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Facebook open graph debugger  -->
+    <meta property="og:type" content = "article/website etc." />
+    <meta property="og:title" content="title name">
+    <meta property="og:description" content="description">
+    <meta property="og:image" content="http://placehold.it/1200x630">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content="url website">
+    <!-- Twitter cards validator -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@lorem" />
+    <meta name="twitter:creator" content="@SimoesSalome">
+    <meta name="twitter:title" content="title name" />
+    <meta name="twitter:description" content="description" />
+    <meta name="twitter:image" content="http://placehold.it/639x404" />
+    <!-- /// Document title /// -->
+    <title>Bootstrap | Affix-Ejample</title>
+    <!-- /// Favicon /// -->
+    <link rel="shorcut icon" href="assets/img/favicon.ico"/>
+    <!--//////////
+    STYLESHEETS
+    ///////////-->
+    <!-- Bootstrap Core CSS -->
+    <link href="assets/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- Custom CSS -->
+    <style type="text/css">
+      /* Note: Try to remove the following lines to see the effect of CSS positioning */
+      .affix {
+        top: 0;
+        width: 100%;
+      }
+      .affix + .container {
+        padding-top: 70px;
+      }
+    </style>
+  </head>
+<!--=======
+END HEAD
+========-->
+<!--====================================================================================
+                                /// START BODY ///
+=====================================================================================-->
+<body>
+
+    <!-- Header
+    ================================================== -->
+    <div style="background-color:#F44336;color:#fff;height:200px;" class="text-center">
+      <div class="container">
+        <h1>Bootstrap Affix Example</h1>
+        <h3>Fixed (sticky) navbar on scroll</h3>
+        <p>Scroll this page to see how the navbar behaves with data-spy="affix".</p>
+        <p>The navbar is attached to the top of the page after you have scrolled a specified amount of pixels.</p>
+      </div>
+    </div>
+
+    <!-- Navigation
+    ================================================== -->
+    <nav class="navbar navbar-inverse" style="width: 100%;z-index: 1000;" data-spy="affix" data-offset-top="197">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Page 1</a></li>
+            <li><a href="#">Page 2</a></li>
+            <li><a href="#">Page 3</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page content
+    ================================================== -->
+    <div class="container text-justify" style="height:1500px">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nulla erat, feugiat ut sodales et, placerat sed magna. Phasellus quis dignissim eros. Ut euismod porta eros id fringilla. Curabitur sed libero velit. Fusce non nisl libero. Cras nec sagittis sapien. Vivamus in justo fringilla, gravida tortor ut, placerat lacus. Praesent ornare faucibus sem, quis ultricies elit faucibus et. Duis eu nibh purus.</p>
+          <p>Curabitur lobortis tellus eget lectus condimentum, ut viverra lorem varius. Nunc in est nec lacus gravida fringilla ac sit amet est. Praesent a diam vitae lacus elementum egestas. Quisque dapibus dolor ligula, vitae pretium elit iaculis vel. Praesent ligula orci, egestas id rutrum sed, rhoncus sed tortor. Mauris a mauris in dolor faucibus pretium. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec sit amet augue sodales, euismod libero in, elementum ipsum. Proin fringilla, libero vel porta pulvinar, eros magna varius metus, eu tincidunt dolor nulla vitae lorem. In nec erat sed sapien sagittis posuere auctor at ex. Phasellus tincidunt at nulla sed hendrerit. Pellentesque dapibus dolor a neque dapibus porta. Sed accumsan hendrerit suscipit. Ut ac felis id enim sollicitudin euismod ac sed nisi.</p>
+          <p>Aenean vehicula nisi non risus iaculis, sit amet luctus urna faucibus. Etiam id posuere nisi, quis sodales dolor. Proin imperdiet velit massa, eget convallis lorem vehicula vel. Vivamus in ex nunc. In nec ante elit. Duis vestibulum dui id metus auctor, aliquam porttitor nisi facilisis. Phasellus faucibus pretium dictum. Ut sodales nulla libero, non lobortis augue porttitor ac. Sed eu purus magna. Maecenas sed ipsum tempor, varius mi vel, blandit libero. Quisque vestibulum risus magna, vel tincidunt lacus vestibulum eu. Nunc lectus leo, venenatis sit amet quam a, blandit rhoncus augue. Mauris id nunc efficitur, pulvinar felis ut, egestas nisi. Fusce vehicula efficitur risus sit amet auctor.</p>
+          <p>Vestibulum congue sodales erat ac maximus. Suspendisse nec lacus nec tortor dignissim posuere ut non est. Quisque porttitor sed mauris sed faucibus. Donec vel leo eget neque volutpat maximus non a felis. Aenean ultricies cursus diam non porta. In gravida quam quam, imperdiet fringilla arcu ornare nec. Sed nisi ante, feugiat vitae volutpat a, elementum ut nibh. Duis pellentesque tellus augue, vitae imperdiet ipsum tincidunt sed. In a quam volutpat, tincidunt ligula eu, mollis magna. Vivamus pulvinar interdum enim, id porta sapien dictum id. Proin faucibus ex faucibus, hendrerit mi eget, mattis massa.</p><p>Maecenas scelerisque sed nunc et malesuada. Praesent ante elit, aliquet aliquet leo at, fringilla aliquet metus. Curabitur tristique sem vitae turpis finibus lacinia fringilla in felis. In maximus enim sit amet purus tristique fringilla. Etiam sagittis risus dignissim diam efficitur euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In hac habitasse platea dictumst. Nullam sit amet fringilla eros, eu venenatis neque. Aenean non interdum odio. Maecenas eget dignissim nulla. Nunc nisl ex, tristique at condimentum quis, pellentesque vitae ante. Pellentesque et ante lacinia, porta sapien non, dictum enim. Curabitur at venenatis massa, non maximus diam.</p>
+          <p>Curabitur placerat eros ac ante dapibus, ut molestie nulla semper. Aenean condimentum faucibus est in iaculis. Praesent non nulla leo. Proin pellentesque feugiat est eu mollis. Nam blandit felis at arcu euismod, eget pellentesque nisi elementum. Donec ac tellus elementum, pharetra sem sodales, euismod ante. Fusce mauris nunc, viverra nec odio scelerisque, pretium vulputate magna. In ac arcu elementum, elementum est sit amet, efficitur metus. Nunc condimentum aliquet cursus. Phasellus nec imperdiet felis, ac vehicula sapien. Cras porta massa augue. Vestibulum libero lectus, accumsan vel ornare nec, malesuada ac erat. Aliquam erat volutpat. Morbi iaculis sit amet ligula et congue. Quisque enim nibh, dictum ac risus id, convallis commodo sem.</p>
+          <p>Mauris venenatis lorem nunc, ac sodales mi efficitur at. Aliquam euismod suscipit tellus a dapibus. Vestibulum eget convallis urna, vel laoreet enim. Suspendisse non mi augue. Fusce ultrices odio a interdum rhoncus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisis tempor congue. Nunc a nulla leo. Phasellus a dignissim orci. Nunc scelerisque, lorem quis pharetra consectetur, neque massa facilisis diam, ac dapibus nisl turpis id orci. Donec vel libero nec velit malesuada consectetur volutpat at erat. Donec eget malesuada dui.</p>
+          <p>Donec in augue sed lectus elementum auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean faucibus lectus nec tincidunt cursus. Vestibulum euismod gravida est. Etiam ultrices et erat et fringilla. Suspendisse posuere risus tellus, vel ultrices dui condimentum ut. Integer porta in turpis nec ultrices.</p>
+          <p>Donec iaculis, felis quis fringilla suscipit, nulla nisl maximus dui, sed vulputate felis nunc ac ipsum. Pellentesque dui velit, laoreet vel enim auctor, ullamcorper congue sapien. Curabitur laoreet blandit nunc, a porta velit viverra id. Etiam vel tincidunt tellus. Praesent sagittis, nisl ac suscipit pretium, dui erat rhoncus nisl, at ullamcorper risus dolor id dolor. Suspendisse pellentesque lacus vitae suscipit rhoncus. Fusce ac dui venenatis, varius nunc sollicitudin, accumsan augue. Sed pulvinar, tellus vitae facilisis facilisis, eros felis tincidunt tortor, et facilisis neque est sed diam. Proin quis nisi tortor. Donec ultricies malesuada magna, sed facilisis est vulputate nec. In hac habitasse platea dictumst.</p>
+        </div>
+      </div>
+    </div>
+
+    <!--//////////
+    JAVASCRIPTS
+    ///////////-->
+    <!-- Librery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <!-- Plugin JavaScript -->
+
+</body>
+<!--========
+END BODY
+=========-->
+</html>
+<!--=============
+FINISH DOC.HTML
+==============-->

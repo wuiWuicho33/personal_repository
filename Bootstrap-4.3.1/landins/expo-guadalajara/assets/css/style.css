@@ -1,0 +1,178 @@
+/*::::::::::::::::::::::
+:::::::::STYLES:::::::::
+::::::::::::::::::::::*/
+
+/*--------------------------------------------------------
+# IMPORTED FONTS
+--------------------------------------------------------*/
+@import url("font-awesome/css/font-awesome.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap')
+
+/*--------------------------------------------------------
+# RESET
+--------------------------------------------------------*/
+html, body{height: 100%;}
+html{overflow-y:scroll; overflow-x:hidden;}
+html, body{margin:; padding:; font-size:; line-height:;}
+body::-webkit-scrollbar{width:15px;}
+body::-webkit-scrollbar-thumb{background:#00263A;}
+
+*, *::before, *::after{box-sizing:border-box;}
+
+a{outline:none; text-decoration:none;}
+a:hover, a:active{outline:none; text-decoration:none;}
+
+/*--------------------------------------------------------
+# HTML 5 OVERRIDES
+--------------------------------------------------------*/
+address, 
+article, 
+aside, 
+figcaption, 
+figure, 
+footer, 
+header, 
+main, 
+nav, 
+section {
+    display:block;
+    margin:0;
+    padding:0;
+}
+
+/*--------------------------------------------------------
+# TRANSITION
+--------------------------------------------------------*/
+/* *, *::before, *::after{transition:all .3s ease-in-out;} */
+#mainav form *{transition:none !important;}
+
+
+/*--------------------------------------------------------
+# FONTS STYLES
+--------------------------------------------------------*/
+body, input, textarea, select { font-family: 'Montserrat', sans-serif; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight:700;
+    margin-bottom:1rem;
+
+}
+
+h1, .h1 {font-size: 2.5rem;}
+h2, .h2 {font-size: 2rem;}
+h3, .h3 {font-size: 1.75rem;}
+h4, .h4 {font-size: 1.5rem;}
+h5, .h5 {font-size: 1.25rem;}
+h6, .h6 {font-size: 1rem;}
+
+.font-xs{font-size:.8rem;}
+.font-x1{font-size:1.2rem;}
+.font-x2{font-size:1.8rem;}
+.font-x3{font-size:2.8rem;}
+
+/*--------------------------------------------------------
+# GENERALISE
+--------------------------------------------------------*/
+hr{display:block; width:100%; height:1px; border:solid; border-width:1px 0 0 0;}
+hr.light {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #fff;
+}
+
+/*--------------------------------------------------------
+# COLOURS
+--------------------------------------------------------*/
+body{color:; background-color:;}
+
+a{color:#333;}
+a:hover, a:active, a:focus{color:#232323;}
+
+hr {border-color: #009ABF;}
+hr.light {border-color: #fff;}
+
+h1, h2, h3, h4, h5, h6{
+    color:#283d50;
+}
+
+.text-primary {color:#009ABF;}
+.text-secondary {color:;}
+.text-tertiary {color:;}
+.text-inverted {color: #fff;}
+
+.bg-default {background-color:#ffffff; color:#333;}
+.bg-light {background-color:#ecf5ff !important; color:#000;}
+.bg-dark {
+    background-color:#004a99 !important; 
+    color:#fff !important;
+}
+.bg-dark h6, .bg-dark h2, .bg-dark h5{color:#ffffff;}
+.bg-darker {background-color:#00263A; color:#fff;}
+.bg-darker h1, .bg-darker h2{color:#ffffff;}
+.bg-degraded{
+    background: #19265C; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#19265C, #009BDB); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#19265C, #009BDB); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#19265C,#009BDB); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#19265C,#009BDB); /* Standard syntax */
+}
+
+/*--------------------------------------------------------
+# SPANCING (Padding and margin)
+--------------------------------------------------------*/
+.nospace {margin:0; padding:0; list-style:none;}
+.pushright li{margin-right:20px;}
+.pushright li:last-child{margin-right:0;}
+/*.py-8{padding: 8rem 0;}*/
+
+/*--------------------------------------------------------
+# DISPLAY PROPERTIES
+--------------------------------------------------------*/
+.block {display:block;}
+.inline *{display:inline-block;}
+.inline *:last-child{margin-right:0;}
+.hidden{display:none;}
+
+/*--------------------------------------------------------
+# IMAGE STYLES
+--------------------------------------------------------*/
+img, object, embed, video {max-width: 100%;}
+
+img{
+    width:auto;
+    height:auto;
+    margin:0;
+    padding:0;
+    border:none;
+    line-height:normal;
+    vertical-align:middle;
+    margin-bottom:1.5rem;
+}
+
+.fl_left, .imgl{float:left;}
+.fl_right, .imgr{float:right;}
+
+/* IE 6 no admite max-width (anchura máxima),por lo que usa de manera
+predeterminada una anchura del 100% */
+.ie6 img {width:100%;}
+
+.mb-none{margin-bottom:none;}
+
+/* =======================================================
+# MEDIAQUERIES
+/* ==================================================== */
+/* Desk devices: Max width 900px 
+------------------------------------------------------- */
+@media screen and (max-width:900px){ }
+
+/* Tablet devices: Max width 750px 
+------------------------------------------------------- */*/
+@media screen and (max-width:750px){
+  .inline li{display:block; margin-bottom:10px;}
+  .pushright li{margin-right:0;}
+  .font-x2{font-size:;}
+  .font-x3{font-size:;}
+
+  .fl_left, .fl_right{display:block; float:none;}
+  .imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
+}

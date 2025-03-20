@@ -1,0 +1,37 @@
+Liga para conseguir imagenes
+http://placehold.it/700x450
+
+http://placehold.it/300x60?text=Logo
+
+
+Correcci—n de logo desbordado
+https://stackoverflow.com/questions/18474564/bootstrap-3-navbar-with-logo
+
+Alinear y acomodar las reglas en las hojas css, estandarizar su acomodo.Sobre todo
+los comentarios que tienen una barra inferior. homologarlos por que me parece que están
+distintos.
+
+También puse una sección nueva de button en layout.css de la carpeta framework pero no
+la replique en las demás. 
+
+
+IMPORTANTE
+
+Luis tienes que trabajar sobre lo que ya tienes, por que siempre buscas cosas nuevas como secciones o elelemntos web
+cuanto ya tienens varias cosas, mejor trata de perfeccionar secciones que puedes hacer con tu framework actual como
+banners de publicidad, llamadas a la acción etc. De otra manera estas condenado a siempre estar trabajando de mas. 
+
+El slide de ficha técnica ya traia el estilo de barritas inferiores, revisar donde estan esas clases.
+
+Estudiar los mediaqueries de bootstrap, y en general estudiar los mediaqueries.
+
+Quitarle el bmtspace a una seccion del framework que no recuerdo.
+
+
+Cambiar todas las clases de fuentes viejitas a las secciones de pages
+Arreglar las clases de los botones en hover active etc
+
+CAmbiar todos los btm space por mb-0
+
+
+

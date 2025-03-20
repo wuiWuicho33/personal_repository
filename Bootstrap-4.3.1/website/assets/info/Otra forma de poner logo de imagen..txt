@@ -1,0 +1,28 @@
+/*navbar-imgbrand*/
+.navbar-imgbrand .navbar-nav {margin: 10px 0 13px;}
+.navbar-imgbrand .navbar-brand {padding: 0px;}
+.navbar-imgbrand .navbar-brand>img {
+  width: 130px;
+  height: auto;
+  padding: 10px; 
+}
+.navbar-imgbrand .navbar-toggle {
+    margin-top: 20px;
+    margin-bottom:0px;
+}
+
+.navbar-imgbrand .navbar-header {padding: 0 0 20px 0;}
+
+@media (min-width: 768px) {
+  .navbar-imgbrand {padding: 10px 0;}
+  .navbar-imgbrand .navbar-brand {padding: 0px;}
+  .navbar-imgbrand .navbar-brand>img {
+      width: 150px;
+      height: auto;
+      padding:0px; /* firefox bug fix */
+    }
+}
+
+.navbar-imgbrand .navbar-nav > li > .dropdown-menu {
+  margin-top: 22px;
+}

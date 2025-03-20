@@ -1,0 +1,48 @@
+Affix Navbar
+https://codepen.io/j_holtslander/pen/waQQYm
+https://codepen.io/Designmite/pen/GwdBm
+https://codepen.io/bart-snel/pen/yeNByP
+https://codepen.io/floraya/pen/oxvLbr
+https://codepen.io/floraya/pen/Goqoex
+https://codepen.io/djdabe/pen/jGOaoR
+
+Toggle
+https://codepen.io/jorenerene/pen/vxKbJb
+
+Dinamic header
+https://codepen.io/YeaDudeSupBro/pen/vXKRwX
+
+Collapser
+https://codepen.io/jbennett45/pen/VKWyxV?depth=everything&order=popularity&page=8&q=bootstrap+navbar&show_forks=false
+https://codepen.io/ahmedrevo/pen/YWAyzJ
+https://codepen.io/homeland/pen/LyVoRj?q=Collapse%20side&order=popularity&depth=everything&show_forks=false
+https://codepen.io/FeSantos/pen/VmbpXK?depth=everything&order=popularity&page=2&q=Collapse+side&show_forks=false
+https://codepen.io/lufydl/pen/EKzGqY
+https://codepen.io/tomlevi/pen/BdzMMQ
+https://codepen.io/dhivyasolomon/pen/yepKZP
+https://codepen.io/Jku/pen/mVNzda
+Lateral opening bootstrap navbar for mobile devices
+Fancy Toggle Sidebar Navigation
+sidebar navigation
+https://bootsnipp.com/snippets/6Xzx2
+https://codepen.io/fadiqua/pen/pbQPEG
+
+Form
+https://codepen.io/gebeer/pen/beNRNr
+
+Nav-center
+https://codepen.io/Gooeywomb/pen/mwvbPM
+
+Scroll navbar
+https://codepen.io/ricardomello/pen/zBoNov
+
+Navbar-center
+https://v4-alpha.getbootstrap.com/examples/navbars/
+
+Navbar
+https://bootsnipp.com/snippets/featured/rainbow-nav
+https://getbootstrap.com/docs/3.3/examples/navbar-fixed-top/
+
+Template
+https://bootstrapmade.com/demo/Tempo/
+https://v4-alpha.getbootstrap.com/examples/
